@@ -1,0 +1,103 @@
+/* =========================
+   CALCULADORA
+   ========================= */
+
+.calculator {
+  width: 270px;
+  padding: 18px;
+  flex: 0 0 auto;
+
+  background-color: var(--blue);
+
+  border: 5px solid var(--dark);
+  border-radius: 10px;
+
+  box-shadow:
+    0 10px 0 var(--dark),
+    0 15px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* PANTALLA */
+
+.screen {
+  width: 100%;
+  height: 65px;
+
+  padding: 12px 14px;
+  margin-bottom: 18px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color: var(--cream);
+  color: var(--dark);
+
+  border: 5px solid var(--dark);
+  border-radius: 5px;
+
+  font-family: "CalculatorFont", sans-serif;
+  font-size: 1.7rem;
+  font-weight: normal;
+
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 5px 8px rgba(0, 0, 0, 0.25),
+    0 4px 0 var(--dark);
+}
+
+/* REJILLA DE BOTONES */
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* NÚMEROS */
+
+button[data-number] {
+  background-color: var(--blue-grey);
+  color: var(--dark);
+}
+
+/* OPERACIONES */
+
+button[data-operation] {
+  background-color: var(--gold);
+  color: var(--white);
+}
+
+/* C, DEL, % */
+
+button[data-action="clear"],
+button[data-action="delete"],
+button[data-action="percent"] {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+/* = */
+
+button[data-action="calculate"] {
+  background-color: var(--gold);
+  color: var(--white);
+
+  /* El = ocupa dos columnas */
+  grid-column: span 2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .screen {
+    height: 75px;
+    font-size: 1.8rem;
+  }
+}

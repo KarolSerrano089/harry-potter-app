@@ -1,0 +1,161 @@
+{
+  "houses": [
+    { 
+        "id": 1, 
+        "name": "Gryffindor", 
+        "founder": "Godric Gryffindor", 
+        "ghost": "Sir Nicholas de Mimsy-Porpington" 
+    },
+    { 
+        "id": 2, 
+        "name": "Slytherin", 
+        "founder": "Salazar Slytherin", 
+        "ghost": "The Bloody Baron" 
+    },
+    { 
+        "id": 3, 
+        "name": "Ravenclaw", 
+        "founder": "Rowena Ravenclaw", 
+        "ghost": "The Grey Lady" 
+    },
+    { 
+        "id": 4, 
+        "name": "Hufflepuff", 
+        "founder": "Helga Hufflepuff", 
+        "ghost": "The Fat Friar" 
+    }
+  ],
+  "characters": [
+    {
+        "id": "hp_001",
+        "name": {
+          "first": "Harry",
+          "middle": "James",
+          "last": "Potter"
+        },
+        "house": "Gryffindor",
+        "blood_status": "Half-blood",
+        "species": "Human",
+        "gender": "Male",
+        "birth_date": "1980-07-31"
+      },
+      {
+        "id": "hp_002",
+        "name": {
+          "first": "Hermione",
+          "middle": "Jean",
+          "last": "Granger"
+        },
+        "house": "Gryffindor",
+        "blood_status": "Muggle-born",
+        "species": "Human",
+        "gender": "Female",
+        "birth_date": "1979-09-19"
+      },
+      {
+        "id": "hp_003",
+        "name": {
+          "first": "Ronald",
+          "middle": "Bilius",
+          "last": "Weasley"
+        },
+        "house": "Gryffindor",
+        "blood_status": "Pure-blood",
+        "species": "Human",
+        "gender": "Male",
+        "birth_date": "1980-03-01"
+      },
+      {
+        "id": "hp_004",
+        "name": {
+          "first": "Albus",
+          "middle": "Percival Wulfric Brian",
+          "last": "Dumbledore"
+        },
+        "house": "Gryffindor",
+        "blood_status": "Half-blood",
+        "species": "Human",
+        "gender": "Male",
+        "birth_date": "1881-08-20"
+      },
+      {
+        "id": "hp_005",
+        "name": {
+          "first": "Severus",
+          "middle": null,
+          "last": "Snape"
+        },
+        "house": "Slytherin",
+        "blood_status": "Half-blood",
+        "species": "Human",
+        "gender": "Male",
+        "birth_date": "1960-01-09"
+      },
+      {
+        "id": "hp_006",
+        "name": {
+          "first": "Draco",
+          "middle": "Lucius",
+          "last": "Malfoy"
+        },
+        "house": "Slytherin",
+        "blood_status": "Pure-blood",
+        "species": "Human",
+        "gender": "Male",
+        "birth_date": "1980-06-05"
+      },
+      {
+        "id": "hp_007",
+        "name": {
+          "first": "Tom",
+          "middle": "Marvolo",
+          "last": "Riddle",
+          "alias": "Lord Voldemort"
+        },
+        "house": "Slytherin",
+        "blood_status": "Half-blood",
+        "species": "Human",
+        "gender": "Male",
+        "birth_date": "1926-12-31"
+      },
+      {
+        "id": "hp_008",
+        "name": {
+          "first": "Luna",
+          "middle": null,
+          "last": "Lovegood"
+        },
+        "house": "Ravenclaw",
+        "blood_status": "Pure-blood",
+        "species": "Human",
+        "gender": "Female",
+        "birth_date": "1981-02-13"
+      },
+      {
+        "id": "hp_009",
+        "name": {
+          "first": "Cedric",
+          "middle": null,
+          "last": "Diggory"
+        },
+        "house": "Hufflepuff",
+        "blood_status": "Pure-blood",
+        "species": "Human",
+        "gender": "Male",
+        "birth_date": "1977-10-01"
+      },
+      {
+        "id": "hp_010",
+        "name": {
+          "first": "Minerva",
+          "middle": null,
+          "last": "McGonagall"
+        },
+        "house": "Gryffindor",
+        "blood_status": "Half-blood",
+        "species": "Human (Animagus: Cat)",
+        "gender": "Female",
+        "birth_date": "1935-10-04"
+      }
+  ]
+}

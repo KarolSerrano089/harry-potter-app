@@ -1,0 +1,95 @@
+/* =========================
+   ESTILOS GLOBALES
+   (lo que comparten todas las clases)
+   ========================= */
+
+/* FUENTE */
+
+@font-face {
+  font-family: "CalculatorFont";
+  src: url("../fonts/Coiny-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* COLORES */
+
+:root {
+  --blue: #4968A6;
+  --gold: #DE9E2A;
+  --light-blue: #6C9BD9;
+  --blue-grey: #A0B9D9;
+  --cream: #F0DCA3;
+  --white: #ffffff;
+  --dark: #25385F;
+}
+
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: var(--cream);
+
+  font-family: "CalculatorFont", sans-serif;
+
+  /* Deja espacio abajo para que el botón fijo no tape las calculadoras */
+  padding: 30px 30px 120px;
+}
+
+/* BOTÓN BASE (todos los botones parten de aquí) */
+
+button {
+  height: 45px;
+
+  border: 3px solid var(--dark);
+  border-radius: 5px;
+
+  background-color: var(--light-blue);
+  color: var(--white);
+
+  font-family: "CalculatorFont", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 0 var(--dark),
+    0 6px 8px rgba(0, 0, 0, 0.2);
+
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    background-color 0.15s ease;
+}
+
+/* HOVER */
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+/* BOTÓN PULSADO */
+
+button:active {
+  transform: translateY(5px);
+
+  box-shadow:
+    0 1px 0 var(--dark),
+    0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 400px) {
+  button {
+    height: 52px;
+    font-size: 1.1rem;
+  }
+}
